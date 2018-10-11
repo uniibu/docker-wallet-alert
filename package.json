@@ -9,6 +9,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix --ext .js .",
+    "test": "node test",
     "start": "node -r dotenv/config index.js"
   },
   "keywords": [
@@ -22,7 +23,8 @@
   },
   "homepage": "https://github.com/uniibu/docker-wallet-alert#readme",
   "devDependencies": {
-    "eslint": "^5.1.0"
+    "eslint": "^5.1.0",
+    "tape": "^4.9.1"
   },
   "dependencies": {
     "cpu-stat": "^2.0.1",
