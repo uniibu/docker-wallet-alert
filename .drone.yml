@@ -6,6 +6,6 @@ pipeline:
       - yarn test
   docker:
     image: plugins/docker
-    repo: bitsler/wallet-alert
+    repo: unibtc/wallet-alert
     tags: latest
     secrets: [ docker_username, docker_password ]
