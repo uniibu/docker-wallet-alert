@@ -4,9 +4,6 @@ pipeline:
     commands:
       - yarn
       - yarn test
-    when:
-      branch: [ master ]
-      event: [ push, pull_request ]
   docker:
     image: plugins/docker
     repo: unibtc/wallet-alert
