@@ -1,0 +1,6 @@
+{
+  "BITCOIND": 8332,
+  "PARITYETH": 8545,
+  "SLACKURL": null,
+  "CRON": "*/30 * * * * *"
+}

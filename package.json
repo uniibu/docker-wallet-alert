@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "eslint --fix --ext .js .",
     "test": "node test",
-    "start": "node -r dotenv/config index.js"
+    "start": "NODE_ENV=production node index.js"
   },
   "keywords": [
     "wallet alert notify"
@@ -27,10 +27,10 @@
     "tape": "4.9.1"
   },
   "dependencies": {
+    "config": "^2.0.1",
     "cpu-stat": "^2.0.1",
     "cron": "^1.4.1",
     "diskusage": "^0.2.5",
-    "dotenv": "^6.1.0",
     "mem-stat": "^1.0.5",
     "needle": "^2.2.4",
     "shelljs": "^0.8.2"

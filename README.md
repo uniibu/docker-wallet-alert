@@ -2,14 +2,16 @@
       send slack alerts about other containered wallets
 
 ### Via Docker
-Create `.env` file somwhere in your directory example `~/alerts/.env`
-Required environment variables are below:
+Create `production.json` file somwhere in your directory example `~/alerts/production.json`
+Required config variables are below:
 
-```
-BITCOIND=8332
-PARITYETH=8545
-SLACKURL=https://hooks.slack.com/services/SECRETSLACKWEBHOOKAPI
-CRON=*/30 * * * * *
+```js
+{
+  "BITCOIND": 8332,
+  "PARITYETH": 8545,
+  "SLACKURL": "https://SLACKWEBHOOKURL",
+  "CRON": "*/30 * * * * *"
+}
 ```
 `BITCOIND` `PARITYETH` `LITECOIND` etc.. are the json rpc ports
 `SLACKURL` is the webhook url from slack
@@ -18,6 +20,7 @@ CRON=*/30 * * * * *
 Run via Docker
 ```
 docker run --name=wallet-alert -d \
-      -v ~/alerts/.env:/app/.env
+      -v /var/run/docker.sock:/var/run/docker.sock \
+      -v ~/.alerts/production.json:/app/config/production.json \
       unibtc/wallet-alert
 ```
