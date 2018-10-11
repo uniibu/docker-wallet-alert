@@ -4,8 +4,14 @@ pipeline:
     commands:
       - yarn
       - yarn test
+    when:
+      branch: [ master ]
+      event: [ push, pull_request ]
   docker:
     image: plugins/docker
     repo: unibtc/wallet-alert
     tags: latest
     secrets: [ docker_username, docker_password ]
+    when:
+      branch: [ master ]
+      event: [ push ]
