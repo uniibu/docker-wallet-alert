@@ -1,0 +1,36 @@
+{
+  "name": "docker-wallet-alert",
+  "version": "1.0.0",
+  "description": "send slack alerts about other containered wallets",
+  "private": false,
+  "engines": {
+    "node": ">=8 <=10"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --fix --ext .js .",
+    "start": "node -r dotenv/config index.js"
+  },
+  "keywords": [
+    "wallet alert notify"
+  ],
+  "author": "unibtc@gmail.com",
+  "license": "MIT",
+  "repository": "https://github.com/uniibu/docker-wallet-alert",
+  "bugs": {
+    "url": "https://github.com/uniibu/docker-wallet-alert/issues"
+  },
+  "homepage": "https://github.com/uniibu/docker-wallet-alert#readme",
+  "devDependencies": {
+    "eslint": "^5.1.0"
+  },
+  "dependencies": {
+    "cpu-stat": "^2.0.1",
+    "cron": "^1.4.1",
+    "diskusage": "^0.2.5",
+    "dotenv": "^6.1.0",
+    "mem-stat": "^1.0.5",
+    "needle": "^2.2.4",
+    "shelljs": "^0.8.2"
+  }
+}
