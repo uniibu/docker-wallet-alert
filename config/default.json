@@ -1,6 +1,10 @@
 {
   "BITCOIND": 8332,
+  "LITECOIND": 9332,
+  "DOGECOIND": 22555,
+  "BCHD": 8432,
   "PARITYETH": 8545,
-  "SLACKURL": null,
+  "PARITYETC": 8546,
+  "RIPPLET": 8899,
   "CRON": "*/30 * * * * *"
 }

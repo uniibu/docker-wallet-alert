@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "eslint --fix --ext .js .",
     "test": "node test",
-    "start": "NODE_ENV=production node index.js"
+    "start": "node index.js"
   },
   "keywords": [
     "wallet alert notify"

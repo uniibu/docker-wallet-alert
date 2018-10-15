@@ -1,12 +1,10 @@
-
 const config = require('config');
 const { CronJob } = require('cron');
 const contStats = require('./lib/containerStats');
 const srvStats = require('./lib/serverStats');
 const notify = require('./lib/notify');
-
-const start = async function(){
-  if(!config.get('SLACKURL') || !config.get('CRON')){
+const start = async () => {
+  if (!config.get('SLACKURL') || !config.get('CRON')) {
     throw new Error('Missing environment variables');
   }
   const containers = await contStats.getContainers();
@@ -15,10 +13,9 @@ const start = async function(){
       wallets: await Promise.all(Object.keys(containers).map(c => contStats.getWalletInfos(c, containers[c]))),
       server: await srvStats()
     };
-    await notify(result);    
+    await notify(result);
   }, null, true);
 };
-
 if (require.main === module) {
   start();
 } else {
