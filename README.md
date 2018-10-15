@@ -28,10 +28,11 @@ Run via Docker
 ```
 docker run -v notify-data:/app --name=walletnotify -d \
       -v $HOME/.walletnotify/default.json:/app/config/default.json \
+      -v /var/run/docker.sock:/var/run/docker.sock \
       unibtc/wallet-alert:latest
 ```
 
 Auto Install
 ```
-sudo bash -c "$(curl -L https://git.io/fxEj5)"
+sudo bash -c "$(curl -L https://git.io/fxuek)"
 ```
