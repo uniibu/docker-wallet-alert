@@ -4,4 +4,4 @@ dist
 .env
 yarn-error.log
 package-lock.json
-config/*.json
+config/
