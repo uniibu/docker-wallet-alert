@@ -4,7 +4,7 @@
 ### Via Docker
 Create a named volume
 
-```js
+```
 docker volume create --name=notify-data
 ```
 
@@ -29,4 +29,9 @@ Run via Docker
 docker run -v notify-data:/app --name=walletnotify -d \
       -v $HOME/.walletnotify/default.json:/app/config/default.json \
       unibtc/wallet-alert:latest
+```
+
+Auto Install
+```
+sudo bash -c "$(curl -L https://git.io/fxEj5)"
 ```
