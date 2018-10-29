@@ -1,6 +1,6 @@
 {
   "name": "docker-wallet-alert",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "send slack alerts about other containered wallets",
   "private": false,
   "engines": {
