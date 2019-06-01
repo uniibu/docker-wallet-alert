@@ -24,7 +24,7 @@
   "homepage": "https://github.com/uniibu/docker-wallet-alert#readme",
   "devDependencies": {
     "eslint": "5.8.0",
-    "tape": "4.9.2"
+    "tape": "4.10.2"
   },
   "dependencies": {
     "config": "^2.0.1",
