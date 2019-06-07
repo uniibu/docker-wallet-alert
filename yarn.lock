@@ -233,12 +233,13 @@ del@^2.0.2:
     pinkie-promise "^2.0.0"
     rimraf "^2.2.8"
 
-diskusage@^0.2.5:
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/diskusage/-/diskusage-0.2.5.tgz#f2e0d86b1722c0ca5284c938e194290202c2e4f8"
-  integrity sha512-Ecq7I8Ch0dicIh3SvsH0xAwfzxzF44EtinNjJ/kZFZznkSeMcKsghjyZhvaAuaRMvqFu+QkNxW2ijV5I68/LXA==
+diskusage@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/diskusage/-/diskusage-1.1.1.tgz#bd47ba4bfa401f0d6b81fa492223b447231da0e5"
+  integrity sha512-YI5PJXdZEe1QfVGx+n0IFbxXYj2cwV/PrQKZKvBKjA///EHNoeM1dJafBYPsfAn9yrb+BDhHSoZ1FDrgs1kqaQ==
   dependencies:
-    nan "^2.5.0"
+    es6-promise "^4.2.5"
+    nan "^2.11.1"
 
 doctrine@^2.1.0:
   version "2.1.0"
@@ -266,6 +267,11 @@ es-to-primitive@^1.1.1:
     is-callable "^1.1.4"
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
+
+es6-promise@^4.2.5:
+  version "4.2.8"
+  resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.8.tgz#4eb21594c972bc40553d276e510539143db53e0a"
+  integrity sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w==
 
 escape-string-regexp@^1.0.5:
   version "1.0.5"
@@ -714,10 +720,10 @@ mute-stream@0.0.7:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
   integrity sha1-MHXOk7whuPq0PhvE2n6BFe0ee6s=
 
-nan@^2.5.0:
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/nan/-/nan-2.11.1.tgz#90e22bccb8ca57ea4cd37cc83d3819b52eea6766"
-  integrity sha512-iji6k87OSXa0CcrLl9z+ZiYSuR2o+c0bGuNmXdrhTQTakxytAFsC56SArGYoiHlJlFoHSnvmhpceZJaXkVuOtA==
+nan@^2.11.1:
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.0.tgz#7818f722027b2459a86f0295d434d1fc2336c52c"
+  integrity sha512-INOFj37C7k3AfaNTtX8RhsTw7qRy7eLET14cROi9+5HAVbbHuIWUHEauBv5qT4Av2tWasiTY1Jw6puUNqRJXQg==
 
 natural-compare@^1.4.0:
   version "1.4.0"
