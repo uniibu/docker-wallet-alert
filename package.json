@@ -1,6 +1,6 @@
 {
   "name": "docker-wallet-alert",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "send slack alerts about other containered wallets",
   "private": false,
   "engines": {
@@ -23,16 +23,15 @@
   },
   "homepage": "https://github.com/uniibu/docker-wallet-alert#readme",
   "devDependencies": {
-    "eslint": "5.8.0",
-    "tape": "4.9.2"
+    "eslint": "5.16.0"
   },
   "dependencies": {
-    "config": "^2.0.1",
+    "config": "^3.1.0",
     "cpu-stat": "^2.0.1",
-    "cron": "^1.4.1",
-    "diskusage": "^0.2.5",
+    "cron": "^1.7.1",
+    "diskusage": "^1.1.1",
     "mem-stat": "^1.0.5",
-    "needle": "^2.2.4",
-    "shelljs": "^0.8.2"
+    "needle": "^2.4.0",
+    "shelljs": "^0.8.3"
   }
 }
