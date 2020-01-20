@@ -28,7 +28,7 @@
   "dependencies": {
     "config": "^3.1.0",
     "cpu-stat": "^2.0.1",
-    "cron": "^1.7.1",
+    "cron": "^1.8.1",
     "diskusage": "^1.1.1",
     "mem-stat": "^1.0.5",
     "needle": "^2.4.0",
