@@ -32,6 +32,6 @@
     "diskusage": "^1.1.1",
     "mem-stat": "^1.0.5",
     "needle": "^2.4.0",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.4"
   }
 }
